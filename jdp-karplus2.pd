@@ -1,0 +1,28 @@
+#N canvas 644 159 734 474 10;
+#X obj 133 23 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 78 84 noise~;
+#X obj 133 120 line;
+#X msg 133 85 1;
+#X msg 172 85 0;
+#X obj 78 154 *~;
+#X obj 399 123 dac~;
+#X obj 116 253 send~ karplus2;
+#X obj 399 75 receive~ karplus2;
+#X obj 172 55 delay 10;
+#X obj 116 223 lop~ 4000;
+#X obj 116 191 z~ 100;
+#X obj 116 154 receive~ karplus2;
+#X connect 0 0 3 0;
+#X connect 0 0 9 0;
+#X connect 1 0 5 0;
+#X connect 2 0 5 1;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 11 0;
+#X connect 8 0 6 0;
+#X connect 8 0 6 1;
+#X connect 9 0 4 0;
+#X connect 10 0 7 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
