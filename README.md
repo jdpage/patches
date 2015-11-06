@@ -17,7 +17,7 @@ for that object. The whole bank then outputs the combined audio stream. See
 
 ## the hammond synth
 
-![jdp-midi-hammond patch](http://i.imgur.com/hFE7Ri0.png)
+![jdp-midi-hammond patch](imgs/hammond.png)
 
 I suggest looking at `jdp-midi-hammond` in order to get an idea of how to use
 this. It consists of two parts: `jdp-hammond-controller` and `jdp-hammond-synth`.
