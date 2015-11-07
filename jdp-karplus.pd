@@ -27,7 +27,7 @@
 #X floatatom 66 300 5 0 0 0 - - -;
 #X obj 388 155 receive~ karplus;
 #X obj 279 -15 hsl 128 15 40 2000 1 0 empty empty empty -2 -8 0 10
--262144 -1 -1 5000 1;
+-262144 -1 -1 0 1;
 #X obj 505 186 receive~ karplus;
 #X floatatom 174 58 5 0 0 0 - - -;
 #X obj 66 246 *~;
@@ -35,7 +35,7 @@
 #X obj 174 16 pow -1;
 #X obj 174 36 * 4000;
 #X obj 64 368 /~ 2.005;
-#X obj 505 218 jdp-monitor;
+#X obj 505 218 jdp-monitor~;
 #X connect 1 0 2 0;
 #X connect 2 0 20 0;
 #X connect 3 0 5 0;
